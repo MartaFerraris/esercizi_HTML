@@ -10,9 +10,36 @@
     <title>HTML Lesson</title>
   </head>
   <body>
-    <h1>In this page we have a disabled button...</h1>
-    <button disabled>Press here!</button>
+    <section>
 
-    
+       <h1>In this page we have a disabled button...</h1>
+       <input type="button" value="Press here!" disabled>
+       
+       <h3>Range number</h3>
+       <form>
+        <label for="range">Range (0 and 100):</label>
+        <input type="number" id="range" name="range" min="0" max="100" step="2" autofocus>
+       </form>
+
+      <h3>Checkbox</h3>
+      <form>
+        <input type="checkbox" id="fruit1" name="fruit1" value="Bananas">
+        <label for="fruit1"> Bananas </label><br>
+        <input type="checkbox" id="fruit2" name="fruit2" value="Strawberries">
+        <label for="fruit2"> Strawberries </label><br>
+        <input type="checkbox" id="fruit3" name="fruit3" value="Apples">
+        <label for="fruit3"> Apples </label><br>
+        <input type="checkbox" id="fruit4" name="fruit4" value="Pineapples">
+        <label for="fruit4"> Pineapples </label><br>
+      </form>
+
+      <h3>Date</h3>
+      <form>
+        <label for="date"> Date: </label>
+        <input type="date" id="date" name="date">
+      </form>
+
+    </section>
+   
   </body>
 </html>
