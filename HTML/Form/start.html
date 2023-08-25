@@ -18,37 +18,61 @@
   <body>
     <section>
       
-      <form>
+      <form action="#">
         <h1>Registration form:</h1>
         <label for="email"> E-mail: </label>
-        <input type="email" id="email" name="email">
+        <input type="email" id="email" name="email" required/>
         <br><br>
 
         <label for="password"> Password: </label>
-        <input type="password" id="password" name="password">
+        <input type="password" id="password" name="password" required/>
         <br><br>
 
         <label for="Fname"> Name: </label>
-        <input type="text" id="Fname" name="Fname">
+        <input type="text" id="Fname" name="Fname" required/>
         <br><br>
 
         <label for="Lname"> Surname:</label>
-        <input type="text" id="Lname" name="Lname">
+        <input type="text" id="Lname" name="Lname" required/>
         <br><br>
 
         <label for="birthday"> Date of birth: </label>
-        <input type="date" id="birthday" name="birthday">
+        <input type="date" id="birthday" name="birthday" required/>
         <br><br>
 
         <label for="telephone"> Telephone number: </label>
-        <input type="tel" id="telephone" name="telephone" placeholder="015 015 015" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
+        <input type="tel" id="telephone" name="telephone" maxlength="10" placeholder="*** *** ***"/>
         <br><br>
 
-        <input type="radio" id="plan1" name="free_plan" value="free_plan">
-        <label for=""        
-        <input type="radio" id="plan2" name="group_plan" value="group_plan">
-   
+        <label for="plans"> Plans </label>
+        <select id="plans" name="plan" required>
+          <option value="0"> Free </option>
+          <optgroup label="Monthly">
+            <option value="999"> 9.99€/month </option>
+            <option value="1999"> 19.99€/month </option>
+            <option value="4999"> 49.99€/month </option>
+          </optgroup>
+        </select>
+        <br><br>
 
+        <label for="pro-plan"> Pro Plan </label>
+        <input type="checkbox" id="pro-plan" name="pro-plan"/>
+        <br><br>
+
+        <label for="cc"> Credit card: </label>
+        <input type="text" id="cc" name="credit-card" maxlength="16" placeholder="**** **** ****"required/>
+        <br><br>
+
+        <label for="cvc"> CVC: </label>
+        <input type="text" id="cvc" name="cvc" maxlength="3" placeholder="***" required/>
+        <br><br>
+        
+        <label for="expire"> Expiration date: </label>
+        <input type="date" id="expire" name="expire" required/>
+        <br><br>
+
+        <label for="bill-address"> Billing address: </label>
+        <input type="text" id="bill-address" name="bill-address" required/>
       </form>
     
     </section>
